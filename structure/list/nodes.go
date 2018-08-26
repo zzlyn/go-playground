@@ -2,13 +2,13 @@ package list
 
 // LinkedNode is the very basic node unit for linked lists
 type LinkedNode struct {
-	value interface{}
-	next  *LinkedNode
+	val  int
+	next *LinkedNode
 }
 
 // DoubleLinkedNode is a linked list node with previous pointer
 type DoubleLinkedNode struct {
-	value    interface{}
+	val      int
 	previous *DoubleLinkedNode
 	next     *DoubleLinkedNode
 }
