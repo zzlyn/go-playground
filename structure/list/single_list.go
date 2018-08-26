@@ -69,6 +69,23 @@ func (list *SingleLinkedList) RemoveAllLazy(target int) {
 	}
 }
 
+// RemoveAll is the practical remove all method
+func (list *SingleLinkedList) RemoveAll(target int) {
+	prev := &LinkedNode{val: 0, next: list.head}
+	temp := prev
+
+	for prev.next != nil {
+		if prev.next.val == target {
+			prev.next = prev.next.next
+			list.length--
+		} else {
+			prev = prev.next
+		}
+	}
+
+	list.head = temp.next
+}
+
 // Prepend adds a value to the front of the list
 func (list *SingleLinkedList) Prepend(target int) {
 	list.length++
