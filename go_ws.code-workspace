@@ -4,5 +4,10 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.ignoreMissingGitWarning": true,
+		"explorer.confirmDelete": false,
+		"go.useCodeSnippetsOnFunctionSuggest": true,
+		"explorer.confirmDragAndDrop": false,
+	}
 }
