@@ -34,6 +34,11 @@ func singleListTest() {
 	myList.RemoveFirst(4)
 	fmt.Println(myList)
 	myList.RemoveFirst(4)
+
+	myList2 := list.NewSingleLinkedList([]int{4, 5, 6, 4, 4, 4, 4, 4, 4, 7})
+	fmt.Println(myList2)
+	myList2.RemoveAllLazy(4)
+	fmt.Println(myList2)
 }
 
 func main() {

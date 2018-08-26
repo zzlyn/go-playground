@@ -62,6 +62,13 @@ func (list *SingleLinkedList) RemoveFirst(target int) bool {
 	return false
 }
 
+// RemoveAllLazy is the dumb version to remove all entries
+func (list *SingleLinkedList) RemoveAllLazy(target int) {
+	for list.RemoveFirst(target) {
+
+	}
+}
+
 // Prepend adds a value to the front of the list
 func (list *SingleLinkedList) Prepend(target int) {
 	list.length++
